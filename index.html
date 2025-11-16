@@ -120,7 +120,7 @@
           const profitAmountUSD = pp * (profit / 100);
           const salePriceUSD = pp + profitAmountUSD;
           const salePriceLL = salePriceUSD * USD_TO_LL_RATE;
-          totalSaleLL = salePriceLL * qty;
+          totalSaleLL = salePriceLL / qty;
         }
         
         totalSalePriceValue.textContent = totalSaleLL.toLocaleString('en-US', {
